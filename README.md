@@ -1,7 +1,7 @@
 # Banksie Loans
 
 ## 💻 Project
-Mobile responsive mortgage calculator, **Banksie Loans**.
+Data visualization mortgage calculator, **Banksie Loans**.
 
 Please visit (in a new tab): https://banksie-loans.vercel.app/
 
