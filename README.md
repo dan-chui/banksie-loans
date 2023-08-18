@@ -17,9 +17,7 @@ Please visit (in a new tab): https://banksie-loans.vercel.app/
 - **Data visualization**: Display monthly Mortgage Payment totals in a pie chart using Chart.js
 
 - **UI/UX**: Clean User interface and easy to use.
-
-- **Mobile Responsive**: Accessible via PC, tablet, or mobile phone systems.
-
+  
 ---
 
 ## 🌎 Getting Started
