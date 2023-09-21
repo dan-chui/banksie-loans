@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Banksie Loans - business website" />
+    <link rel="icon" type="image/png" href="/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Banksie Loans</title>
+  </head>
+  <body>
+    <section class="sub-header2">
+      <nav class="nav-wrapper" id="navbar">
+        <a href="/index.html"><img src="/assets//Banksie.svg" alt="logo" /></a>
+
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-window-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/checking.html">Checking</a></li>
+            <li><a href="/pages/savings.html">Savings</a></li>
+            <li><a href="/pages/mortgages.html">Mortgages</a></li>
+            <strong
+              ><li>
+                <a href="/pages/contact.html" class="btn-rounded">Contact</a>
+              </li></strong
+            >
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- About -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Over 300 clients and growing</h1>
+          <p>
+            For the past 10 years, we have always been big believers in the
+            growth potential of our clients. Today, we are privileged to work
+            with organizations that are on a new growth journey, one that
+            pursues sustainability, inclusion, and economic growth, all at the
+            same time. <br />
+            <br />
+            All our successes, the differences we make for our clients, our
+            people, and in our communities around the globe, come down to our
+            purpose: to make an impact that matters. It is this simple statement
+            that defines each decision, each connection, and drives us — always.
+            To uphold integrity and promote a culture of inclusion. To build
+            better futures.
+          </p>
+          <a href="/pages/services.html" class="hero-btn2">EXPLORE</a>
+        </div>
+        <div class="about-col">
+          <img src="/assets/light-bulb.webp" alt="about" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Location and Contact Form -->
+    <section class="contact-us">
+      <div class="row">
+        <img src="/assets/interview.svg" alt="" />
+        <!-- <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>1-1-8 Nishi-Shinjuku, Shinjuku-Ku</h5>
+              <p>Tokyo, Japan 160-0023</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+81 03-2222-9999</h5>
+              <p>Business hours: 9am - 730pm, Monday - Friday</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>contact@titans-advisory.com</h5>
+              <p>Email Inquiries</p>
+            </span>
+          </div>
+        </div> -->
+        <div class="contact-col">
+          <form action="" onsubmit="sendEmail()">
+            <input type="text" placeholder="Name" required />
+            <input type="email" placeholder="Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea
+              name=""
+              id=""
+              rows="8"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="location">
+      <img src="/assets/map.webp" alt="map" />
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <h3>
+        <a style="text-decoration: none" href="/pages/contact.html">Connect</a>
+      </h3>
+
+      <p>
+        Please feel free to connect with us to learn about our full suite of
+        solutions and services.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-twitter-square"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="/script.js"></script>
+  </body>
+</html>
