@@ -324,13 +324,6 @@ h3 {
 
 /* Products */
 
-.row1 {
-  margin-top: 2%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .products-col {
   flex-basis: 48%;
   background: white;
@@ -506,6 +499,24 @@ h3 {
   user-select: none;
 }
 
+/* Mortgage Calculator */
+.mortgage-calculator {
+  margin: 100px auto;
+  width: 60%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/caclulator.webp);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 200px 0;
+}
+
+.mortgage-calculator h1 {
+  color: white;
+  margin-bottom: 1px;
+}
+
 /* About Us */
 
 .sub-header1 {
@@ -531,12 +542,21 @@ h3 {
   padding: 30px 2px;
 }
 
+.about-col ul {
+  list-style-type: none;
+}
+
 .about-col img {
   width: 100%;
 }
 
 .about-col p {
   padding: 15px 0 25px;
+}
+
+.check-mark {
+  display: inline-block;
+  flex-wrap: nowrap;
 }
 
 /* Contact Us */

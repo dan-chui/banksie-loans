@@ -6,7 +6,8 @@
   --active-color: #3465bf;
   --title-color: #1d57c2;
   --range-bg-color: rgba(213, 216, 226, 255);
-  --links-color: #39a4b3;
+  --links-color: #005780;
+  --results-color: #665b5b;
 }
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -19,7 +20,7 @@ nav {
   padding: 2px 6px;
   justify-content: space-between;
   align-items: center;
-  background-color: #373f4c;
+  background-color: #b3b1b1;
 }
 
 nav img {
@@ -48,7 +49,6 @@ nav i.fa.fa-window-close {
 .nav-links ul li {
   list-style: none;
   display: inline-block;
-  /* margin-top: 30px; */
   padding: 8px 12px;
   position: relative;
 }
@@ -56,22 +56,31 @@ nav i.fa.fa-window-close {
 .nav-links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
+  transition: all 0.2s ease-in-out;
 }
 
-.nav-links ul li::after {
-  content: "";
-  width: 0%;
-  height: 2px;
+.nav-links ul li a:hover {
+  color: var(--links-color);
+}
+
+.btn-rounded {
+  border: solid;
+  padding: 7px 26px;
+  text-align: center;
+  color: white;
   background: var(--links-color);
-  display: block;
-  margin: 5px 0;
-  transition: 0.5s;
+  border-radius: 40px;
 }
 
-.nav-links ul li:hover::after {
-  width: 100%;
+.btn-rounded:hover {
+  padding: 7px 26px;
+  text-align: center;
+  color: var(--box-color);
+  background: white;
+  border-radius: 40px;
 }
+
 .top-header {
   display: flex;
   justify-content: space-between;
@@ -138,7 +147,7 @@ nav i.fa.fa-window-close {
 }
 .form-group__range-slide-container {
   width: calc(100% - 95px);
-  display: flex;
+  /* display: flex; */
 }
 .form-group__range-slide {
   width: 100%;
@@ -212,6 +221,8 @@ nav i.fa.fa-window-close {
   transform: scale(1.02);
   box-shadow: inset 0 -3em 3em rgba(200, 200, 200, 0.1),
     0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.9);
+  color: var(--dark_text_color);
+  background-color: white;
 }
 .mg-page__right {
   width: 70%;
@@ -240,7 +251,7 @@ nav i.fa.fa-window-close {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #66330c;
+  background-color: var(--results-color);
   display: flex;
   justify-content: center;
   align-items: center;
