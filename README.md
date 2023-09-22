@@ -54,6 +54,4 @@ npm run build
 
 ## Demo
 
-Please visit (in a new tab): https://banksie-loans.vercel.app/
 
-![](/assets/screenshot.webp)
