@@ -14,15 +14,15 @@ function myFunction() {
   }
 }
 
-// // Toggle Menu - Show or Hide
-// var navLinks = document.getElementById("navLinks");
+// Toggle Menu - Show or Hide
+var navLinks = document.getElementById("navLinks");
 
-// // Open the sidenav
-// function showMenu() {
-//   document.getElementById("navLinks").style.width = "100%";
-// }
+// Open the sidenav
+function showMenu() {
+  document.getElementById("navLinks").style.width = "100%";
+}
 
-// // Close/hide the sidenav
-// function hideMenu() {
-//   document.getElementById("navLinks").style.width = "0";
-// }
+// Close/hide the sidenav
+function hideMenu() {
+  document.getElementById("navLinks").style.width = "0";
+}
