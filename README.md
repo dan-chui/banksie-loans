@@ -1,9 +1,7 @@
 # Banksie Loans
 
 ## 💻 Project
-Data visualization mortgage calculator, **Banksie Loans**.
-
-Please visit (in a new tab): https://banksie-loans.vercel.app/
+Mobile responsive multi-page Website for a regional bank, **Banksie Loans**.
 
 ## 🚀 Technologies
 
@@ -54,6 +52,4 @@ npm run build
 
 ## Demo
 
-Please visit (in a new tab): https://banksie-loans.vercel.app/
 
-![](/assets/screenshot.webp)
