@@ -19,7 +19,7 @@ var navLinks = document.getElementById("navLinks");
 
 // Open the sidenav
 function showMenu() {
-  document.getElementById("navLinks").style.width = "100%";
+  document.getElementById("navLinks").style.width = "70%";
 }
 
 // Close/hide the sidenav

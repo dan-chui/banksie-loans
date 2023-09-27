@@ -229,3 +229,16 @@ function updateChart(chart, label, color) {
 
 //  Reset page with default figures
 calculateData();
+
+// Toggle Menu - Show or Hide
+var navLinks = document.getElementById("navLinks");
+
+// Open the sidenav
+function showMenu() {
+  document.getElementById("navLinks").style.width = "100%";
+}
+
+// Close/hide the sidenav
+function hideMenu() {
+  document.getElementById("navLinks").style.width = "0";
+}
