@@ -15,6 +15,8 @@ Mobile responsive multi-page Website for a regional bank, **Banksie Loans**.
 - **Data visualization**: Display monthly Mortgage Payment totals in a pie chart using Chart.js
 
 - **UI/UX**: Clean User interface and easy to use.
+
+- **Responsive**: Accessible via PC (including extra-wide screens), tablet, and mobile phone.
   
 ---
 
@@ -28,7 +30,7 @@ Clone the repository:
 https://github.com/dan-chui/banksie-loans.git
 ```
 
-Then use the Windows Terminal: cd titans-advisory
+Then use the Windows Terminal: cd banksie-loans
 
 
 **Install dependencies:**
