@@ -1,4 +1,4 @@
-/** Object to get and store number input data from html **/
+/** Store input data from HTML **/
 let state = {
   price: getNumber(document.querySelectorAll('[name="price"]')[0].value),
   loan_years: document.querySelectorAll('[name="loan_years"]')[0].value,
@@ -34,12 +34,12 @@ let totalLoan,
     ,
   ];
 
-/** Function to turn the html number input data to real numbers **/
+/** Convert input data to numbers **/
 function getNumber(str) {
   return Number(str.replace(/[^0-9\.-]+/g, ""));
 }
 
-/** Script to create the visual myChart **/
+/** Create the visual myChart **/
 const ctx = document.getElementById("myChart");
 
 let myChart = new Chart(ctx, {
@@ -78,8 +78,7 @@ let inputTexts = document.getElementsByClassName("form-group__textInput");
 //  Loop to retrieve price and loan years input fields value
 for (let i = 0; i < inputTexts.length; i++) {
   //  An input change event listener
-  //  Changes in the input field triggers this loop and
-  //  triggers the updateInputsState function to capture the values put into the input text fields
+  //  Changes in the input field triggers this loop and triggers the updateInputsState function to capture the values put into the input text fields
   inputTexts[i].addEventListener("input", updateInputsState);
 }
 
@@ -90,8 +89,7 @@ let inputSlides = document.getElementsByClassName("form-group__range-slide");
 //  Loop to retrieve slider input fields value
 for (let i = 0; i < inputSlides.length; i++) {
   //  An input change event listener
-  //  Changes in the input field triggers this loop and
-  //  triggers the updateInputsState function to capture the values put into the input slider fields
+  //  Changes in the input field triggers this loop and triggers the updateInputsState function to capture the values put into the input slider fields
   inputSlides[i].addEventListener("input", updateInputsState);
 }
 
@@ -110,12 +108,12 @@ function updateInputsState(event) {
     let total;
     //  Check for matching name input fields
     if (name == "home_insurance" || name == "hoa") {
-      //  If matching names above then output value without %
+      //  If it matches the names above then output value without %
       total = document.getElementsByClassName(
         `total__${name}`
       )[0].innerHTML = `${value}`;
     } else {
-      //  If does NOT match names above, then output value with %
+      //  If it does NOT match the names above, then output value with %
       total = document.getElementsByClassName(
         `total__${name}`
       )[0].innerHTML = `${value}%`;
@@ -123,7 +121,7 @@ function updateInputsState(event) {
   }
 
   state = {
-    //  Gets all values in the state object above and reassigns it here
+    //  Gets all values in the state object above and reassigns it
     ...state,
     [name]: value,
   };
