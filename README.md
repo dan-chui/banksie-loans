@@ -1,7 +1,7 @@
 # Banksie Loans
 
 ## 💻 Project
-Mobile responsive multi-page Website for a regional bank, **Banksie Loans**.
+Multi-page Website for a regional bank, **Banksie Loans**.
 
 ## 🚀 Technologies
 
@@ -19,6 +19,23 @@ Mobile responsive multi-page Website for a regional bank, **Banksie Loans**.
 - **Responsive**: Accessible via PC (including extra-wide screens), tablet, and mobile phone.
   
 ---
+
+## Demo
+
+Please visit (in a new tab): https://banksie-loans.vercel.app
+
+![](/assets/screenshot1.webp)
+
+![](/assets/screenshot2.webp)
+
+![](/assets/screenshot3.webp)
+
+![](/assets/screenshot4.webp)
+
+![](/assets/screenshot5.webp)
+
+---
+
 
 ## 🌎 Getting Started
 
@@ -51,7 +68,3 @@ npm run dev
 ```
 npm run build
 ```
-
-## Demo
-
-
