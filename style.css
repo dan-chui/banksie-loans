@@ -123,7 +123,7 @@ nav img:hover {
 }
 
 .text-box p {
-  margin: 10px 0 40px;
+  margin: 10px 0 30px;
   font-size: 28px;
   color: white;
   user-select: none;
@@ -339,7 +339,7 @@ p {
 /* CTA */
 .cta {
   margin: 100px auto;
-  width: 60%;
+  width: 70%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/contact-laptop.webp);
   background-position: center;
@@ -359,7 +359,7 @@ p {
 /* Mortgage Calculator */
 .mortgage-calculator {
   margin: 100px auto;
-  width: 60%;
+  width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/assets/caclulator.webp);
   background-position: center;
@@ -371,7 +371,7 @@ p {
 
 .mortgage-calculator h1 {
   color: white;
-  margin-bottom: 1px;
+  margin-bottom: 25px;
   font-size: 2.5rem;
 }
 
@@ -553,17 +553,7 @@ iframe {
 }
 
 /* Media queries */
-@media (min-width: 930px) and (max-width: 1280px) {
-  .header {
-    background-position: left;
-  }
-  nav .fa {
-    display: block;
-    color: white;
-    margin: 55px 50px 45px 50px;
-    font-size: 22px;
-    cursor: pointer;
-  }
+@media (max-width: 1280px) {
   .nav-links {
     position: fixed;
     background: var(--links-color);
@@ -582,6 +572,32 @@ iframe {
   .nav-links ul li a {
     margin-left: 2rem;
   }
+}
+
+@media (min-width: 930px) and (max-width: 1280px) {
+  .header {
+    background-position: left;
+  }
+  nav .fa {
+    display: block;
+    color: white;
+    margin: 55px 50px 45px 50px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links {
+    right: -23rem;
+    display: initial;
+  }
+  .nav-links ul li {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .nav-links ul li a {
+    margin-left: 1.9rem;
+  }
+
   .row {
     flex-direction: column;
     margin-bottom: 5px;
@@ -600,7 +616,6 @@ iframe {
   }
 }
 
-/* Media queries */
 @media (min-width: 768px) and (max-width: 929px) {
   .header {
     background-position: left;
@@ -613,22 +628,14 @@ iframe {
     cursor: pointer;
   }
   .nav-links {
-    position: fixed;
-    background: var(--links-color);
-    height: 100vh;
-    width: 10px;
-    top: 0;
-    right: -350px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
+    right: -16rem;
   }
   .nav-links ul li {
     display: block;
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 2rem;
+    margin-left: 1.9rem;
   }
   .row {
     flex-direction: column;
@@ -671,6 +678,7 @@ iframe {
   }
   .text-box p {
     font-size: 22px;
+    margin: 10px 0 60px;
   }
   nav {
     margin-right: 1rem;
@@ -686,20 +694,13 @@ iframe {
   nav .fa {
     display: block;
     color: white;
-    margin: 50px 50px 40px 30px;
+    margin: 50px 50px 40px 40px;
     font-size: 22px;
     cursor: pointer;
   }
   .nav-links {
-    position: fixed;
-    background: var(--links-color);
-    height: 100vh;
-    width: 230px;
-    top: 0;
-    right: -60px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
+    /* width: 230px; */
+    right: -2.5rem;
   }
   .nav-links ul li {
     display: block;
@@ -707,7 +708,7 @@ iframe {
   }
 
   .nav-links ul li a {
-    margin-left: 1rem;
+    margin-left: 1.37rem;
   }
   .row {
     flex-direction: column;
@@ -746,9 +747,6 @@ iframe {
     margin-top: 0;
     grid-template-columns: repeat(auto-fit, minmax(275px, auto));
   }
-  .mortgage-calculator {
-    width: 80%;
-  }
   .mortgage-calculator h1 {
     font-size: 2rem;
   }
@@ -781,15 +779,7 @@ iframe {
     cursor: pointer;
   }
   .nav-links {
-    position: fixed;
-    background: var(--links-color);
-    height: 100vh;
-    width: 120px;
-    top: 0;
-    right: -50px;
-    text-align: left;
-    z-index: 2;
-    transition: 1s;
+    right: -2.5rem;
   }
 
   .nav-links ul li {

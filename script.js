@@ -1,7 +1,3 @@
-window.onscroll = function () {
-  myFunction();
-};
-
 var navlist = document.getElementById("navbar");
 var sticky = navlist.offsetTop;
 
@@ -13,6 +9,10 @@ function myFunction() {
     navlist.classList.remove("sticky");
   }
 }
+
+window.onscroll = function () {
+  myFunction();
+};
 
 // Toggle Menu - Show or Hide
 var navLinks = document.getElementById("navLinks");
