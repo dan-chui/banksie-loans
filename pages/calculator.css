@@ -430,7 +430,7 @@ nav img:hover {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 2rem;
+    margin-left: 2.2rem;
   }
 
   .info__total label {
@@ -468,7 +468,7 @@ nav img:hover {
   }
 
   .nav-links ul li a {
-    margin-left: 1.9rem;
+    margin-left: 2.2rem;
   }
 
   .row {
@@ -508,7 +508,7 @@ nav img:hover {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 1.9rem;
+    margin-left: 2.2rem;
   }
 }
 @media (max-width: 767px) {
@@ -562,7 +562,7 @@ nav img:hover {
   }
 
   .nav-links ul li a {
-    margin-left: 1.5rem;
+    margin-left: 1.8rem;
   }
   .info__title {
     font-size: 1.2rem;
@@ -603,7 +603,7 @@ nav img:hover {
 
   .nav-links ul li a {
     font-size: 0.8rem;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
   }
   .form-group__label {
     font-size: 0.9rem;
