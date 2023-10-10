@@ -7,7 +7,7 @@
   --title-color: #1d57c2;
   --range-bg-color: rgba(213, 216, 226, 255);
   --links-color: #005780;
-  --results-color: #665b5b;
+  --results-color: #8c664d;
   --footer-color: #266380;
 }
 html {
@@ -99,20 +99,22 @@ nav img:hover {
 
 .mg-page {
   background-color: #eceff7;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   display: flex;
 }
+
+/* Left Page - Calculator Selectors */
 .mg-page__left {
   padding: 200px 20px 0 20px;
   width: 40%;
-  margin-top: -0.5rem;
+  margin-top: -3.5rem;
 }
 .forms-two-col {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .form-group {
@@ -200,9 +202,10 @@ nav img:hover {
 }
 .form-group__button {
   color: white;
-  background: var(--links-color);
+  background: #bf5847;
   padding: 10px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
   width: 100%;
   border: none;
   outline: none;
@@ -215,6 +218,8 @@ nav img:hover {
   color: var(--dark_text_color);
   background-color: white;
 }
+
+/* Right Page - Data and Pie Chart */
 .mg-page__right {
   width: 70%;
   position: relative;
@@ -233,7 +238,6 @@ nav img:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* opacity: 1; */
   transition: opacity 0.3s ease-in-out;
 }
 .mg-results {
@@ -259,7 +263,7 @@ nav img:hover {
   opacity: 0;
 }
 .mg-results__chart {
-  width: 400px;
+  width: 100%;
 }
 .mg-results__info {
   width: 100%;
@@ -368,69 +372,44 @@ nav img:hover {
 }
 
 /* Media queries */
-@media (max-width: 68.75em) {
+@media (max-width: 1100px) {
   .mg-page {
     flex-direction: column;
     height: auto;
     overflow: hidden;
   }
-}
-.mg-page__left {
-  width: 60%;
-  padding: 6.5rem 1.25rem 0 1.25rem;
-}
-.mg-page__right {
-  width: 100%;
+  .mg-page__left {
+    width: 100%;
+    padding: 5.5rem 1.25rem 0 1.25rem;
+  }
+  .mg-page__right {
+    width: 100%;
+  }
+  .forms-two-col {
+    margin-top: 5.5rem;
+  }
 }
 
-@media (max-width: 36em) {
+/* Media queries */
+@media (max-width: 840px) {
   .mg-results {
-    background-color: white;
-    visibility: visible;
+    position: relative;
   }
-}
-
-@media (max-width: 36em) {
   .mg-results__container {
-    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+    gap: 1rem;
+    border-radius: 0;
   }
-}
-@media (max-width: 40em) {
+  .image-panel {
+    display: none;
+    height: 0;
+  }
   .mg-results__chart {
-    width: 18.75rem;
-  }
-}
-@media (max-width: 31.25em) {
-  .mg-results__chart {
-    width: 16.5rem;
-  }
-}
-
-@media (max-width: 40em) {
-  .info__title {
-    font-size: 1.2rem;
-  }
-  .info__label {
-    font-size: 0.8rem;
-  }
-  .info__total .info__numbers {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 31.25em) {
-  .info__total .info__numbers {
-    font-size: 1.2rem;
-  }
-}
-@media (max-width: 68.75em) {
-  .footer {
-    color: var(--dark_text_color);
     width: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
-    bottom: -1rem;
+    align-items: center;
   }
 }
 
@@ -453,8 +432,17 @@ nav img:hover {
   .nav-links ul li a {
     margin-left: 2rem;
   }
-  .mg-page__left {
+
+  .info__total label {
+    font-size: 1.2rem;
+  }
+  .footer {
+    color: var(--dark_text_color);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: -1rem;
   }
 }
 
@@ -576,6 +564,15 @@ nav img:hover {
   .nav-links ul li a {
     margin-left: 1.37rem;
   }
+  .info__title {
+    font-size: 1.2rem;
+  }
+  .info__label {
+    font-size: 0.9rem;
+  }
+  .info__total .info__numbers {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 350px) {
@@ -614,6 +611,12 @@ nav img:hover {
   .form-group__textInput {
     font-size: 0.9rem;
   }
+  .mg-results__container {
+    display: flow-root;
+  }
+  .info__total .info__numbers {
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1800px) {
@@ -628,7 +631,6 @@ nav img:hover {
     position: initial;
   }
 }
-
 html,
 body {
   width: auto !important;
