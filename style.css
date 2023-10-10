@@ -589,7 +589,7 @@ iframe {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 2.1rem;
+    margin-left: 2.2rem;
   }
 }
 
@@ -614,7 +614,7 @@ iframe {
   }
 
   .nav-links ul li a {
-    margin-left: 1.9rem;
+    margin-left: 2.2rem;
   }
 
   .row {
@@ -654,7 +654,7 @@ iframe {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 2.1rem;
+    margin-left: 2.2rem;
   }
   .row {
     flex-direction: column;
@@ -726,7 +726,7 @@ iframe {
   }
 
   .nav-links ul li a {
-    margin-left: 1.5rem;
+    margin-left: 1.7rem;
   }
   .row {
     flex-direction: column;
