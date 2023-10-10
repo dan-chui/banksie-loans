@@ -589,7 +589,7 @@ iframe {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 2rem;
+    margin-left: 2.1rem;
   }
 }
 
@@ -654,7 +654,7 @@ iframe {
     margin-bottom: 2rem;
   }
   .nav-links ul li a {
-    margin-left: 1.9rem;
+    margin-left: 2.1rem;
   }
   .row {
     flex-direction: column;
@@ -726,7 +726,7 @@ iframe {
   }
 
   .nav-links ul li a {
-    margin-left: 1.37rem;
+    margin-left: 1.5rem;
   }
   .row {
     flex-direction: column;
@@ -807,7 +807,7 @@ iframe {
 
   .nav-links ul li a {
     font-size: 0.8rem;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
   }
   .hero-start-btn {
     font-size: 16px;
