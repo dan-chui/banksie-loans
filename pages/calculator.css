@@ -106,9 +106,9 @@ nav img:hover {
 
 /* Left Page - Calculator Selectors */
 .mg-page__left {
-  padding: 200px 20px 0 20px;
+  padding: 40px 20px 0 20px;
   width: 40%;
-  margin-top: -3.5rem;
+  margin-top: 3rem;
 }
 .forms-two-col {
   display: grid;
@@ -295,7 +295,6 @@ nav img:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-direction: column; */
   padding: 20px;
 }
 .info__total label {
@@ -372,7 +371,7 @@ nav img:hover {
 }
 
 /* Media queries */
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .mg-page {
     flex-direction: column;
     height: auto;
@@ -380,7 +379,7 @@ nav img:hover {
   }
   .mg-page__left {
     width: 100%;
-    padding: 5.5rem 1.25rem 0 1.25rem;
+    padding: 2rem 1.25rem 0 1.25rem;
   }
   .mg-page__right {
     width: 100%;
