@@ -12,7 +12,7 @@ Multi-page Website for a regional bank, **Banksie Loans**.
 
 ## 💫 Features
 
-- **Data visualization**: Display monthly Mortgage Payment totals in a pie chart using Chart.js
+- **Data visualization**: Display monthly Mortgage Payment figures in a pie chart using Chart.js
 
 - **UI/UX**: Clean User interface and easy to use.
 
