@@ -5,7 +5,7 @@ Multi-page Website for a regional bank, **Banksie Loans**.
 
 ## 🚀 Technologies
 
-- JavaScript (ES6+)
+- JavaScript
 - HTML
 - CSS
 - Vercel
