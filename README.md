@@ -1,7 +1,7 @@
 # Banksie Loans
 
 ## 💻 Project
-Multi-page Website for a regional bank, **Banksie Loans**.
+Multi-page Website for a regional bank, **Banksie Loans**. The website features pages for Checking, Savings, and Mortgage Loan services. A Mortgage Calculator will calculated data using Chart.js
 
 ## 🚀 Technologies
 
