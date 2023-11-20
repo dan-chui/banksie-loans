@@ -1,11 +1,13 @@
 # Banksie Loans
 
 ## 💻 Project
-Multi-page Website for a regional bank, **Banksie Loans**.
+Multi-page Website for a regional bank, **Banksie Loans**. The website features pages for Checking, Savings, and Mortgage Loan services. A Mortgage Calculator will calculate and display data using Chart.js
+
+Please visit (in a new tab): https://banksie-loans.vercel.app
 
 ## 🚀 Technologies
 
-- JavaScript (ES6+)
+- JavaScript
 - HTML
 - CSS
 - Vercel
