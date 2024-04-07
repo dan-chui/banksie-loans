@@ -18,33 +18,33 @@ let totalLoan,
   monthlyHomeInsurance,
   monthlyHOA,
   monthlyTotal,
-  labels = ["Principal & Interest", "Property Tax", "Home Insurance", "HOA"],
+  labels = ['Principal & Interest', 'Property Tax', 'Home Insurance', 'HOA'],
   backgroundColor = [
-    "rgba(255, 122, 122, 1)",
-    "rgb(73, 153, 245, 1)",
-    "rgb(252, 204, 106, 1)",
-    "rgb(125, 207, 74, 1)",
+    'rgba(255, 122, 122, 1)',
+    'rgb(73, 153, 245, 1)',
+    'rgb(252, 204, 106, 1)',
+    'rgb(125, 207, 74, 1)',
     ,
   ],
   borderColor = [
-    "rgb(255, 122, 122, 1)",
-    "rgb(73, 153, 245, 1)",
-    "rgb(252, 204, 106, 1)",
-    "rgb(125, 207, 74, 1)",
+    'rgb(255, 122, 122, 1)',
+    'rgb(73, 153, 245, 1)',
+    'rgb(252, 204, 106, 1)',
+    'rgb(125, 207, 74, 1)',
     ,
   ];
 
 /** Convert input data to numbers **/
 function getNumber(str) {
-  return Number(str.replace(/[^0-9\.-]+/g, ""));
+  return Number(str.replace(/[^0-9\.-]+/g, ''));
 }
 
 /** Create the visual myChart **/
-const ctx = document.getElementById("myChart");
+const ctx = document.getElementById('myChart');
 
 let myChart = new Chart(ctx, {
   //  Chart type
-  type: "doughnut",
+  type: 'doughnut',
 
   //  Data to display in Chart
   data: {
@@ -52,7 +52,7 @@ let myChart = new Chart(ctx, {
     labels: labels,
     datasets: [
       {
-        label: "# of Votes",
+        label: '# of Votes',
         //  Data from html input fields variables
         data: [
           monthlyPrincipalInterest,
@@ -73,24 +73,24 @@ myChart.options.animation = false;
 
 /** Event listener for html input text fields **/
 //  Get html form input text fields
-let inputTexts = document.getElementsByClassName("form-group__textInput");
+let inputTexts = document.getElementsByClassName('form-group__textInput');
 
 //  Loop to retrieve price and loan years input fields value
 for (let i = 0; i < inputTexts.length; i++) {
   //  An input change event listener
   //  Changes in the input field triggers this loop and triggers the updateInputsState function to capture the values put into the input text fields
-  inputTexts[i].addEventListener("input", updateInputsState);
+  inputTexts[i].addEventListener('input', updateInputsState);
 }
 
 /** Event listener to html input slider fields **/
 //  Get Html form input slider fields
-let inputSlides = document.getElementsByClassName("form-group__range-slide");
+let inputSlides = document.getElementsByClassName('form-group__range-slide');
 
 //  Loop to retrieve slider input fields value
 for (let i = 0; i < inputSlides.length; i++) {
   //  An input change event listener
   //  Changes in the input field triggers this loop and triggers the updateInputsState function to capture the values put into the input slider fields
-  inputSlides[i].addEventListener("input", updateInputsState);
+  inputSlides[i].addEventListener('input', updateInputsState);
 }
 
 /** Function to target input fields and assign the name and the value typed to variables **/
@@ -99,15 +99,15 @@ function updateInputsState(event) {
   let value = event.target.value;
 
   //  Change html input fields to real numbers
-  if (name == "price") {
+  if (name == 'price') {
     value = getNumber(value);
   }
 
   //  Changes slider output numbers based on the slider
-  if (event.target.type == "range") {
+  if (event.target.type == 'range') {
     let total;
     //  Check for matching name input fields
-    if (name == "home_insurance" || name == "hoa") {
+    if (name == 'home_insurance' || name == 'hoa') {
       //  If it matches the names above then output value without %
       total = document.getElementsByClassName(
         `total__${name}`
@@ -131,14 +131,14 @@ function updateInputsState(event) {
 }
 
 /** Add click event listener to display results **/
-document.getElementsByTagName("form")[0].addEventListener("submit", (event) => {
+document.getElementsByTagName('form')[0].addEventListener('submit', (event) => {
   //  Prevent form from reloading webpage after clicking Enter or the Result button
   event.preventDefault();
 
   //  Add new class to the right column to show results after enter or result button is clicked
   document
-    .getElementsByClassName("mg-page__right")[0]
-    .classList.add("mg-page__right--animate");
+    .getElementsByClassName('mg-page__right')[0]
+    .classList.add('mg-page__right--animate');
 
   // Function runs when user clicks on enter or result button
   calculateData();
@@ -168,32 +168,32 @@ function calculateData() {
     parseFloat(monthlyHOA);
 
   //  Display calculated values in results
-  document.getElementsByClassName("info__numbers--principal")[0].innerHTML =
-    "$" +
+  document.getElementsByClassName('info__numbers--principal')[0].innerHTML =
+    '$' +
     parseFloat(monthlyPrincipalInterest).toLocaleString(undefined, {
       maximumFractionDigits: 2,
     });
   document.getElementsByClassName(
-    "info__numbers--property_taxes"
+    'info__numbers--property_taxes'
   )[0].innerHTML =
-    "$" +
+    '$' +
     parseFloat(monthlyPropertyTaxes).toLocaleString(undefined, {
       maximumFractionDigits: 2,
     });
   document.getElementsByClassName(
-    "info__numbers--home_insurance"
+    'info__numbers--home_insurance'
   )[0].innerHTML =
-    "$" +
+    '$' +
     parseFloat(monthlyHomeInsurance).toLocaleString(undefined, {
       maximumFractionDigits: 2,
     });
-  document.getElementsByClassName("info__numbers--hoa")[0].innerHTML =
-    "$" +
+  document.getElementsByClassName('info__numbers--hoa')[0].innerHTML =
+    '$' +
     parseFloat(monthlyHOA).toLocaleString(undefined, {
       maximumFractionDigits: 2,
     });
-  document.getElementsByClassName("info__numbers--total")[0].innerHTML =
-    "$" +
+  document.getElementsByClassName('info__numbers--total')[0].innerHTML =
+    '$' +
     monthlyTotal.toLocaleString(undefined, {
       maximumFractionDigits: 2,
     });
@@ -209,6 +209,7 @@ function updateChart(chart, label, color) {
 
   //  Add calculated results into chart
   chart.data.datasets.push({
+    label: label,
     backgroundColor: color,
     data: [
       monthlyPrincipalInterest,
@@ -227,16 +228,3 @@ function updateChart(chart, label, color) {
 
 //  Reset page with default figures
 calculateData();
-
-// Toggle Menu - Show or Hide
-var navLinks = document.getElementById("navLinks");
-
-// Open the sidenav
-function showMenu() {
-  document.getElementById("navLinks").style.width = "70%";
-}
-
-// Close/hide the sidenav
-function hideMenu() {
-  document.getElementById("navLinks").style.width = "0";
-}
