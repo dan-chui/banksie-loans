@@ -24,7 +24,7 @@ Please visit (in a new tab): https://banksie-loans.vercel.app
 
 ## Demo
 
-Please visit (in a new tab): https://banksie-loans.vercel.app
+Please visit (in a new tab): https://banksie-loans-website.vercel.app/
 
 ![](/assets/screenshot1.webp)
 
