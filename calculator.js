@@ -209,7 +209,6 @@ function updateChart(chart, label, color) {
 
   //  Add calculated results into chart
   chart.data.datasets.push({
-    label: label,
     backgroundColor: color,
     data: [
       monthlyPrincipalInterest,
