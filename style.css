@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
   --text-color: #2d4272;
@@ -8,7 +8,7 @@
 }
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
@@ -44,7 +44,7 @@ h5 {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
-    url(/assets/happyboy2.webp);
+    url(/assets/freedom.webp);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -57,7 +57,7 @@ nav {
   margin-right: 2rem;
   justify-content: space-between;
   align-items: center;
-  background-color: #b3b1b1;
+  background-color: #284755;
 }
 
 nav img {
@@ -93,7 +93,7 @@ nav img:hover {
 }
 
 .nav-links ul li a:hover {
-  color: black;
+  color: #87bcd4;
 }
 
 #navbar {
@@ -550,7 +550,7 @@ iframe {
   display: block;
   font-size: 1rem;
   padding: 0.3rem 0;
-  color: black;
+  color: #87bcd4;
   text-decoration: none;
 }
 
@@ -594,7 +594,7 @@ iframe {
 
 @media (min-width: 930px) and (max-width: 1280px) {
   .header {
-    background-position: left;
+    background-position: center;
   }
   nav .fa {
     display: block;
@@ -636,7 +636,7 @@ iframe {
 
 @media (min-width: 768px) and (max-width: 929px) {
   .header {
-    background-position: left;
+    background-position: center;
   }
   nav .fa {
     display: block;
@@ -685,7 +685,7 @@ iframe {
     font-size: 1.8rem;
   }
   .header {
-    background-position: left;
+    background-position: center;
   }
   p {
     font-size: 0.95rem;
